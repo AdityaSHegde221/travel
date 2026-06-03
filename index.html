@@ -1,3 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-color: #0b0f14;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+/* ===== HEADING ===== */
+.title {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: 40px;
+}
+
+.hover-word {
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.hover-word:hover {
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+.amp {
+  color: #8b5cf6;
+  font-size: 60px;
+}
+
+/* ===== STUDENT PROFILE ===== */
+.profile-title {
+  font-size: 35px;
+  margin-top: 60px;
+}
+
+.underline {
+  width: 120px;
+  height: 4px;
+  background-color: #8b5cf6;
+  margin: 10px auto 30px;
+  border-radius: 5px;
+}
+
+.card {
+  width: 80%;
+  margin: auto;
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+/* Rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row:hover {
+  background-color: #111827;
+  transition: 0.3s;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  color: #a5b4fc;
+  text-transform: uppercase;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== MAIN TITLE ===== -->
 <h1 class="title">
   <span class="hover-word">WEB</span>
   <span class="hover-word">TECHNOLOGY</span><br>
@@ -6,36 +100,33 @@
   <span class="hover-word">ENGINEERING</span>
 </h1>
 
-<style>
-body {
-  background-color: #0b0f14;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
+<!-- ===== PROFILE SECTION ===== -->
+<div class="profile-title">Student Profile</div>
+<div class="underline"></div>
 
-/* Main Title */
-.title {
-  font-size: 60px;   /* BIG TEXT 🔥 */
-  font-weight: bold;
-  letter-spacing: 3px;
-}
+<div class="card">
 
-/* Words */
-.hover-word {
-  color:#5219d5;
-  transition: 0.3s;
-  cursor: pointer;
-  margin: 0 10px;
-}
+  <div class="row">
+    <div class="label">Name:</div>
+    <div class="value">ANAGHA NADGOUDA</div>
+  </div>
 
-/* Hover effect */
-.hover-word:hover {
-  color: cyan;
-}
+  <div class="row">
+    <div class="label">Department:</div>
+    <div class="value">COMPUTER SCIENCE AND ENGINEERING</div>
+  </div>
 
-/* & symbol */
-.amp {
-  color: #8b5cf6;
-  font-size: 60px;
-}
-</style>
+  <div class="row">
+    <div class="label">Semester:</div>
+    <div class="value">5TH SEMESTER</div>
+  </div>
+
+  <div class="row">
+    <div class="label">USN:</div>
+    <div class="value">01FE23BCS076</div>
+  </div>
+
+</div>
+
+</body>
+</html>
