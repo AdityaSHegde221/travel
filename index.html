@@ -11,9 +11,11 @@ body {
   text-align: center;
   color: white;
 }
+
 h2 {
-  margin-bottom: 50px;  /* 👈 bigger space */
+  margin-bottom: 50px;
 }
+
 /* ===== HEADING ===== */
 .title {
   font-size: 60px;
@@ -39,10 +41,10 @@ h2 {
   font-size: 60px;
 }
 
-/* ===== STUDENT PROFILE ===== */
+/* ===== PROFILE SECTION ===== */
 .profile-title {
   font-size: 35px;
-  margin-top: 70px;
+  margin-top: 180px;
 }
 
 .underline {
@@ -52,9 +54,7 @@ h2 {
   margin: 10px auto 30px;
   border-radius: 5px;
 }
-.profile-title {
-  margin-top: 180px;   /* 👈 large spacing 🔥 */
-}
+
 /* Card */
 .card {
   width: 55%;
@@ -63,14 +63,13 @@ h2 {
   background-color: #0f172a;
   border: 1px solid #1e293b;
   border-radius: 15px;
-  padding: 15px;   /* 👈 reduced padding */
+  padding: 15px;
   transition: 0.3s;
 }
 
-/* Hover effect for whole card */
 .card:hover {
-  transform: scale(1.03);   /* slight zoom */
-  box-shadow: 0 0 20px cyan; /* glow effect 🔥 */
+  transform: scale(1.03);
+  box-shadow: 0 0 20px cyan;
   border-color: cyan;
 }
 
@@ -78,32 +77,62 @@ h2 {
 .row {
   display: flex;
   align-items: center;
-  gap: 20px;   /* 👈 space between label & value */
+  gap: 20px;
   padding: 10px 0;
   border-bottom: 1px solid #1e293b;
 }
+
 .row:last-child {
   border-bottom: none;
 }
 
-/* Text */
 .label {
+  width: 150px;
   font-weight: bold;
-  font-size: 14px;   /* 👈 smaller text */
+  font-size: 14px;
 }
 
 .value {
-  font-size: 14px;   /* 👈 smaller text */
+  font-size: 14px;
   color: #a5b4fc;
 }
 
 .row:hover {
   background-color: #111827;
+}
+
+/* ===== COURSE SECTION ===== */
+.course-title {
+  font-size: 35px;
+  margin-top: 100px;
+}
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  width: 300px;
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 15px;
+  padding: 15px;
   transition: 0.3s;
 }
 
+.course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px cyan;
+  border-color: cyan;
+}
 
-
+.course-card h3 {
+  color: #8b5cf6;
+  margin-bottom: 15px;
+}
 
 </style>
 </head>
@@ -119,7 +148,7 @@ h2 {
   <span class="hover-word">ENGINEERING</span>
 </h1>
 
-<!-- ===== PROFILE SECTION ===== -->
+<!-- ===== PROFILE ===== -->
 <div class="profile-title">Student Profile</div>
 <div class="underline"></div>
 
@@ -143,6 +172,54 @@ h2 {
   <div class="row">
     <div class="label">USN:</div>
     <div class="value">01FE24BCS091</div>
+  </div>
+
+</div>
+
+<!-- ===== COURSE OVERVIEW ===== -->
+<div class="course-title">Course Overview</div>
+<div class="underline"></div>
+
+<div class="course-container">
+
+  <!-- Course 1 -->
+  <div class="course-card">
+    <h3>Course 1</h3>
+
+    <div class="row">
+      <div class="label">Name:</div>
+      <div class="value">Web Technologies</div>
+    </div>
+
+    <div class="row">
+      <div class="label">Code:</div>
+      <div class="value">24ECSP304</div>
+    </div>
+
+    <div class="row">
+      <div class="label">Instructor:</div>
+      <div class="value">Sweta Patil</div>
+    </div>
+  </div>
+
+  <!-- Course 2 -->
+  <div class="course-card">
+    <h3>Course 2</h3>
+
+    <div class="row">
+      <div class="label">Name:</div>
+      <div class="value">Software Engineering</div>
+    </div>
+
+    <div class="row">
+      <div class="label">Code:</div>
+      <div class="value">25ECSC301</div>
+    </div>
+
+    <div class="row">
+      <div class="label">Instructor:</div>
+      <div class="value">Padmashree Desai</div>
+    </div>
   </div>
 
 </div>
