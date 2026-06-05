@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Tech & Software Engineering Portal</title>
 <style>
 
 body {
-  /* Dynamic abstract image background with a dark overlay to maintain high text contrast */
-  background: linear-gradient(rgba(11, 15, 20, 0.85), rgba(11, 15, 20, 0.95)), 
-              url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1920&auto=format&fit=crop') no-repeat center center fixed;
+  /* High-quality dark tech image background with a deep tint overlay for high text legibility */
+  background: 
+    linear-gradient(rgba(8, 11, 16, 0.88), rgba(8, 11, 16, 0.94)),
+    url('https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1920&auto=format&fit=crop') no-repeat center center fixed;
   background-size: cover;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
   color: white;
+  min-height: 100vh;
 }
 
 h2 {
@@ -22,9 +27,10 @@ h2 {
 /* ===== HEADING ===== */
 .title {
   font-size: 60px;
-  font-weight: bold;
+  font-weight: 800;
   letter-spacing: 3px;
-  margin-top: 40px;
+  margin-top: 60px;
+  line-height: 1.2;
 }
 
 .hover-word {
@@ -32,48 +38,54 @@ h2 {
   transition: 0.3s;
   cursor: pointer;
   margin: 0 10px;
+  display: inline-block;
 }
 
 .hover-word:hover {
   color: cyan;
-  text-shadow: 0 0 10px cyan;
+  text-shadow: 0 0 15px cyan;
+  transform: translateY(-2px);
 }
 
 .amp {
   color: #8b5cf6;
   font-size: 60px;
+  margin: 10px 0;
+  display: inline-block;
 }
 
 /* ===== PROFILE SECTION ===== */
 .profile-title {
   font-size: 35px;
-  margin-top: 180px;
+  margin-top: 100px;
+  font-weight: 600;
 }
 
 .underline {
   width: 120px;
   height: 4px;
   background-color: #8b5cf6;
-  margin: 10px auto 30px;
+  margin: 10px auto 40px;
   border-radius: 5px;
 }
 
-/* Card */
+/* Card - Modern glassmorphism look to blend with image background */
 .card {
-  width: 55%;
-  max-width: 500px;
-  margin: 20px auto;  /* less space below profile */
-  background-color: rgba(15, 23, 42, 0.85); /* Added slight transparency to blend with background */
-  border: 1px solid #1e293b;
-  border-radius: 15px;
-  padding: 15px;
-  transition: 0.3s;
-  backdrop-filter: blur(5px); /* Soft glass effect */
+  width: 85%;
+  max-width: 550px;
+  margin: 20px auto 80px; 
+  background-color: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 20px cyan;
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
   border-color: cyan;
 }
 
@@ -82,8 +94,9 @@ h2 {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 10px 0;
-  border-bottom: 1px solid #1e293b;
+  padding: 14px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: 0.2s;
 }
 
 .row:last-child {
@@ -91,24 +104,31 @@ h2 {
 }
 
 .label {
-  width: 150px;
+  width: 140px;
   font-weight: bold;
   font-size: 14px;
+  text-align: left;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
 }
 
 .value {
   font-size: 14px;
   color: #a5b4fc;
+  text-align: left;
+  font-weight: 600;
 }
 
 .row:hover {
-  background-color: #111827;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
 }
 
 /* ===== COURSE SECTION ===== */
 .course-title {
   font-size: 35px;
   margin-top: 40px;
+  font-weight: 600;
 }
 
 .course-container {
@@ -116,114 +136,13 @@ h2 {
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  padding: 0 20px 60px;
 }
 
 .course-card {
-  width: 300px;
-  background-color: rgba(15, 23, 42, 0.85); /* Added slight transparency */
-  border: 1px solid #1e293b;
-  border-radius: 15px;
-  padding: 15px;
-  transition: 0.3s;
-  margin-bottom: 20px; 
-  backdrop-filter: blur(5px);
-}
-
-.course-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px cyan;
-  border-color: cyan;
-}
-
-.course-card h3 {
-  color: #8b5cf6;
-  margin-bottom: 15px;
-}
-
-</style>
-</head>
-
-<body>
-
-<h1 class="title">
-  <span class="hover-word">WEB</span>
-  <span class="hover-word">TECHNOLOGY</span><br>
-  <span class="amp">&</span><br>
-  <span class="hover-word">SOFTWARE</span>
-  <span class="hover-word">ENGINEERING</span>
-</h1>
-
-<div class="profile-title">Student Profile</div>
-<div class="underline"></div>
-
-<div class="card">
-
-  <div class="row">
-    <div class="label">Name:</div>
-    <div class="value">ADITYA S HEGDE</div>
-  </div>
-
-  <div class="row">
-    <div class="label">Department:</div>
-    <div class="value">COMPUTER SCIENCE AND ENGINEERING</div>
-  </div>
-
-  <div class="row">
-    <div class="label">Semester:</div>
-    <div class="value">4TH SEMESTER</div>
-  </div>
-
-  <div class="row">
-    <div class="label">USN:</div>
-    <div class="value">01FE24BCS091</div>
-  </div>
-
-</div>
-
-<div class="course-title">Course Overview</div>
-<div class="underline"></div>
-
-<div class="course-container">
-
-  <div class="course-card">
-    <h3>Course 1</h3>
-
-    <div class="row">
-      <div class="label">Name:</div>
-      <div class="value">Web Technologies</div>
-    </div>
-
-    <div class="row">
-      <div class="label">Code:</div>
-      <div class="value">25ECSP207</div>
-    </div>
-
-    <div class="row">
-      <div class="label">Instructor:</div>
-      <div class="value">Sweta Patil</div>
-    </div>
-  </div>
-
-  <div class="course-card">
-    <h3>Course 2</h3>
-
-    <div class="row">
-      <div class="label">Name:</div>
-      <div class="value">Software Engineering</div>
-    </div>
-
-    <div class="row">
-      <div class="label">Code:</div>
-      <div class="value">25ECSC213</div>
-    </div>
-
-    <div class="row">
-      <div class="label">Instructor:</div>
-      <div class="value">Padmashree Desai</div>
-    </div>
-  </div>
-
-</div>
-
-</body>
-</html>
+  width: 320px;
+  background-color: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.4s cubic-bezier(0.175, 0.88
