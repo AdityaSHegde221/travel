@@ -4,7 +4,10 @@
 <style>
 
 body {
-  background-color: #0b0f14;
+  /* Dynamic abstract image background with a dark overlay to maintain high text contrast */
+  background: linear-gradient(rgba(11, 15, 20, 0.85), rgba(11, 15, 20, 0.95)), 
+              url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1920&auto=format&fit=crop') no-repeat center center fixed;
+  background-size: cover;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -60,11 +63,12 @@ h2 {
   width: 55%;
   max-width: 500px;
   margin: 20px auto;  /* less space below profile */
-  background-color: #0f172a;
+  background-color: rgba(15, 23, 42, 0.85); /* Added slight transparency to blend with background */
   border: 1px solid #1e293b;
   border-radius: 15px;
   padding: 15px;
   transition: 0.3s;
+  backdrop-filter: blur(5px); /* Soft glass effect */
 }
 
 .card:hover {
@@ -104,7 +108,7 @@ h2 {
 /* ===== COURSE SECTION ===== */
 .course-title {
   font-size: 35px;
- margin-top: 40px;
+  margin-top: 40px;
 }
 
 .course-container {
@@ -116,12 +120,13 @@ h2 {
 
 .course-card {
   width: 300px;
-  background-color: #0f172a;
+  background-color: rgba(15, 23, 42, 0.85); /* Added slight transparency */
   border: 1px solid #1e293b;
   border-radius: 15px;
   padding: 15px;
   transition: 0.3s;
-   margin-bottom: 20px; s
+  margin-bottom: 20px; 
+  backdrop-filter: blur(5px);
 }
 
 .course-card:hover {
@@ -140,7 +145,6 @@ h2 {
 
 <body>
 
-<!-- ===== MAIN TITLE ===== -->
 <h1 class="title">
   <span class="hover-word">WEB</span>
   <span class="hover-word">TECHNOLOGY</span><br>
@@ -149,7 +153,6 @@ h2 {
   <span class="hover-word">ENGINEERING</span>
 </h1>
 
-<!-- ===== PROFILE ===== -->
 <div class="profile-title">Student Profile</div>
 <div class="underline"></div>
 
@@ -177,13 +180,11 @@ h2 {
 
 </div>
 
-<!-- ===== COURSE OVERVIEW ===== -->
 <div class="course-title">Course Overview</div>
 <div class="underline"></div>
 
 <div class="course-container">
 
-  <!-- Course 1 -->
   <div class="course-card">
     <h3>Course 1</h3>
 
@@ -203,7 +204,6 @@ h2 {
     </div>
   </div>
 
-  <!-- Course 2 -->
   <div class="course-card">
     <h3>Course 2</h3>
 
